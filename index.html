@@ -94,7 +94,7 @@
         mapboxgl.accessToken = 'pk.eyJ1Ijoiam9obmRvbmVob28iLCJhIjoiY2tocGVkeTVzMDdicDMwb2NpNmpiemtwNiJ9.IByrHrNvd53HR-yyMKQfWw'; //Mapbox token 
         var map = new mapboxgl.Map({
             container: 'map', // container id
-            style: 'mapbox://styles/johndonehoo/cki6fimh510px19s04t96bhtb', //stylesheet location
+            style: 'mapbox://styles/johndonehoo/cki6gpmdp1fmz19mn90yqnk84', //stylesheet location
             center: [-78.24462890625, 41.04621681452063], // starting position
             zoom: 5,// starting zoom
             transformRequest: transformRequest
@@ -132,18 +132,25 @@
                                 'circle-color': [
                                     "match",
                                     ["get", "Business_type"],
-                                    ["NASA"],
-                                    "#163bdf",
+                                    [
+                                        "NASA",
+                                        "Aerospace",
+                                        "Aeropsace"
+                                    ],
+                                    "#282d91",
                                     ["Educational"],
-                                    "hsl(121, 78%, 34%)",
-                                    ["Aeropsace"],
-                                    "#163bdf",
-                                    ["Aerospace"],
-                                    "#163bdf",
-                                    ["Commercial Space"],
-                                    "hsl(0, 84%, 48%)",
+                                    "hsl(141, 19%, 38%)",
                                     ["Government"],
-                                    "hsl(154, 88%, 42%)",
+                                    "#b92a25",
+                                    [
+                                        "Industry",
+                                        "Industry Support"
+                                    ],
+                                    "hsl(289, 73%, 27%)",
+                                    ["Air Force"],
+                                    "hsl(31, 94%, 44%)",
+                                    ["Commercial Space"],
+                                    "hsl(247, 90%, 48%)",
                                     "#000000"
                                 ]
                             }
